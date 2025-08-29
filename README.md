@@ -1,9 +1,5 @@
 # 🎨 Divine Ganesha Drawing with MUSIC
-<img width="1299" height="973" alt="image" src="https://github.com/user-attachments/assets/b957e947-8735-417d-9f51-8d581e267541" />
-
 <img width="1165" height="886" alt="image" src="https://github.com/user-attachments/assets/d7834d1d-a2ac-4ad6-8832-faa560f9c7e9" />
-
-
 A beautiful Python application that creates an animated Lord Ganesha drawing with Sanskrit prayers, background music, and falling flowers effect - perfect for Ganesh Chaturthi celebrations.
 
 ## 🙏 Features
