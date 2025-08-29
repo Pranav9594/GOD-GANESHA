@@ -205,15 +205,5 @@ This project is open source and available under the MIT License.
 - Created for Ganesh Chaturthi celebrations
 - Inspired by traditional Indian art and spirituality
 - Uses Python's Turtle graphics for educational purposes
-
-## 📞 Support
-
-For issues or questions:
-1. Check the troubleshooting section
-2. Ensure all requirements are met
-3. Verify file paths are correct
-4. Try running with minimal features first
-
 ---
-
 **🎉 Happy Ganesh Chaturthi! May Lord Ganesha bless you with wisdom and remove all obstacles from your path. 🙏**
