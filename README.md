@@ -1,4 +1,4 @@
-# 🎨 Divine Ganapati Drawing with Sanskrit Prayer
+# 🎨 Divine Ganapati Drawing with MUSIC
 
 A beautiful Python application that creates an animated Lord Ganesha drawing with Sanskrit prayers, background music, and falling flowers effect - perfect for Ganesh Chaturthi celebrations.
 
