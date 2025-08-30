@@ -2,7 +2,7 @@ from turtle import *
 import pygame
 import threading
 
-# ================== Setup ==================
+# ================== Setup ===================
 title('CoderHuBhai')
 bgcolor("black")
 speed(10)
