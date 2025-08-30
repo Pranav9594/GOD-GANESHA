@@ -1,5 +1,6 @@
 # 🎨 Divine Ganesha Drawing with MUSIC
-<img width="1306" height="928" alt="Screenshot 2025-08-30 161520" src="https://github.com/user-attachments/assets/3e733fb5-680b-45b7-a6db-f33edb9f9486" />
+<img width="1306" height="920" alt="Screenshot 2025-08-30 161520" src="https://github.com/user-attachments/assets/c51619d5-499c-4907-89f4-0970bf9a92e1" />
+
 
 
 
