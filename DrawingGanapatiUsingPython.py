@@ -1,15 +1,81 @@
-from turtle import*
+from turtle import *
+import pygame
+import threading
 
+# ================== Setup ==================
 title('CoderHuBhai')
 bgcolor("black")
-speed(4)
+speed(10)
 pencolor('red')
 fillcolor('orange')
 
-def CoderHu(x,y):
+# ==================== MUSIC ====================
+def play_music():
+    """Plays the background music in a separate thread."""
+    try:
+        pygame.mixer.init()
+        pygame.mixer.music.load(r"C:\Users\prana\Pictures\Danka Baja - RaagJatt.mp3")  # update path
+        pygame.mixer.music.play(-1)  # loop infinitely
+    except Exception as e:
+        print(f"Could not play music: {e}")
+
+# Start music thread
+threading.Thread(target=play_music, daemon=True).start()
+
+def CoderHu(x, y):
     penup()
-    goto(x,y)
+    goto(x, y)
     pendown()
+
+# ================== Extra Functions ==================
+def draw_main_face_outline():
+    """Draws the larger outline of the face."""
+    print("वक्रतुंड महाकाय सूर्यकोटि समप्रभ।")
+    pencolor("gold")
+    pensize(5)
+    penup()
+    goto(-50, 180)
+    pendown()
+    seth(30)
+    fd(120)
+    circle(60, 270)
+
+def draw_trunk():
+    """Draws the trunk."""
+    print("निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥")
+    penup()
+    goto(0, 40)
+    pendown()
+    seth(-90)
+    pensize(10)
+    forward(50)
+    circle(100, 80)
+    pensize(9)
+    circle(150, 50)
+    pensize(7)
+    circle(100, 60)
+    pensize(5)
+    circle(90, 60)
+    pensize(4)
+    circle(40, 60)
+    circle(10, 90)
+
+def add_text():
+    """Adds 'Happy Ganesh Chaturthi' text in Sky Blue only."""
+    penup()
+    goto(-270, 320)   # Move to top-left corner
+    color("skyblue")  # ✅ Only sky blue
+    write("HAPPY GANESH CHATURTHI", align="left", font=("Arial", 30, "bold"))
+
+def add_mantra():
+    """Adds full mantra at the middle-right beside the drawing."""
+    penup()
+    goto(220, 5)   # Adjusted to middle right side
+    color("gold")
+    write("वक्रतुंड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
+          align="left", font=("Arial", 25, "bold"))
+
+# ================== Main Drawing ==================
 
 # trunk    
 CoderHu(-130,150)
@@ -26,6 +92,7 @@ circle(55,150)
 circle(120,77)
 circle(-100,115)
 end_fill()
+
 CoderHu(0,50)
 seth(20)
 begin_fill()
@@ -37,6 +104,7 @@ circle(50,70)
 circle(205,70)
 circle(50,85)
 end_fill()
+
 CoderHu(70,10)
 seth(15)
 begin_fill()
@@ -53,6 +121,7 @@ def eye():
     seth(-90)
     circle(-17,165)
     end_fill()
+
 CoderHu(-100,110)    
 eye()
 CoderHu(40,110)
@@ -63,6 +132,7 @@ def cir(r):
     begin_fill()
     circle(r)
     end_fill()
+
 CoderHu(0,150)    
 cir(10)
 CoderHu(-2,125)
@@ -78,6 +148,7 @@ circle(-150,60)
 seth(141)
 circle(120,80)
 end_fill()
+
 CoderHu(-70,225)
 seth(30)
 begin_fill()
@@ -85,6 +156,7 @@ circle(-120,60)
 seth(141)
 circle(95,80)
 end_fill()
+
 CoderHu(-30,280)
 seth(-120)
 begin_fill()
@@ -94,6 +166,7 @@ seth(-100)
 circle(50,42)
 circle(-15,240)
 end_fill()
+
 CoderHu(-5,268)
 cir(9)
 
@@ -206,6 +279,7 @@ circle(-20,80)
 circle(32,170)
 circle(-20,80)
 end_fill()
+
 CoderHu(-205,-80)
 seth(75)
 begin_fill()
@@ -230,6 +304,7 @@ circle(-20,80)
 circle(32,170)
 circle(-20,80)
 end_fill()
+
 CoderHu(205,-80)
 seth(75)
 begin_fill()
@@ -241,5 +316,10 @@ circle(-40,40)
 seth(-45)
 circle(-40,35)
 end_fill()
+
+# ================== Extra Features ==================
+add_text()
+add_mantra()
+
 hideturtle()
 done()
